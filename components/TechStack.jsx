@@ -29,9 +29,9 @@ const skillGroups = [
     title: "AI dan alat produktivitas",
     items: [
       { name: "Claude", logo: "claude" },
-      { name: "Cursor", logo: "cursor" },
-      { name: "CrewAI", logo: "crewai" },
-      { name: "Perplexity", logo: "perplexity" },
+      // { name: "Cursor", logo: "cursor" },
+      // { name: "CrewAI", logo: "crewai" },
+      // { name: "Perplexity", logo: "perplexity" },
     ],
   },
 ];
