@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "judul": "Pengembangan Web Fullstack",
+    "deskripsi": "Membangun pengalaman web yang terstruktur dan berguna, dari antarmuka yang mudah dipahami hingga logika di baliknya.",
+    "ikon": "code-block"
+  },
+  {
+    "id": 2,
+    "judul": "Alur Kerja AI dan Otomatisasi",
+    "deskripsi": "Mengeksplorasi cara AI dan otomatisasi dapat membantu pekerjaan sehari-hari menjadi lebih terstruktur.",
+    "ikon": "robot-brain"
+  },
+  {
+    "id": 3,
+    "judul": "Desain dan Logika Gim",
+    "deskripsi": "Mempelajari bagaimana aturan, sistem, dan ruang eksplorasi membentuk pengalaman bermain yang bermakna.",
+    "ikon": "pickaxe"
+  }
+]

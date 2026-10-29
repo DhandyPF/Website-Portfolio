@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "institusi": "[SMK Negeri 1 Cikedung]",
+    "logo": "/edu-logos/smk-negeri-1-cikedung.png",
+    "jurusan": "[Rekayasa Perangkat Lunak]",
+    "periode": "[2022 : 2025]",
+    "deskripsi": "[PENCAPAIAN ATAU FOKUS STUDI (OPSIONAL)]"
+  },
+  {
+    "id": 2,
+    "institusi": "[Universitas Jenderal Soedirman]",
+    "logo": "/edu-logos/universitas-jenderal-soedirman.png",
+    "jurusan": "[Informatika]",
+    "periode": "[2025 : 2029]",
+    "deskripsi": "[PENCAPAIAN ATAU FOKUS STUDI (OPSIONAL)]"
+  }
+]

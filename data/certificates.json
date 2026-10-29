@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "judul": "[NAMA KEGIATAN ATAU SERTIFIKAT]",
+    "penerbit": "[NAMA PENYELENGGARA ATAU ORGANISASI]",
+    "periode": "[BULAN / TAHUN PELAKSANAAN]",
+    "fotoSertifikat": "/certificates/sertifikat-placeholder.svg",
+    "deskripsi": "[DESKRIPSI RINGKAS KEGIATAN ATAU KOMPETENSI YANG DIPEROLEH]"
+  }
+]
