@@ -3,8 +3,8 @@ export default function Footer() {
     <footer className="border-t border-borderSubtle">
       <div className="page-shell flex flex-col gap-3 py-7 text-xs text-textMain/45 sm:flex-row sm:items-center sm:justify-between">
         <p>
-          © {new Date().getFullYear()} Dhandy Putra Fahruddin. Dibuat dengan
-          rasa ingin tahu.
+          © {new Date().getFullYear()} Dhandy Putra Fahruddin. All rights
+          reserved.
         </p>
         <a
           href="#beranda"

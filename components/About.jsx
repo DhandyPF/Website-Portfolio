@@ -42,8 +42,8 @@ export default function About() {
                   className="object-cover"
                 />
               </div>
-              <figcaption className="px-2 pb-1 pt-4 text-xs leading-5 text-textMain/50">
-                Tempatkan foto profil formal atau semi-formal dengan rasio 3:4.
+              <figcaption className="px-2 pb-1 pt-4 text-xs leading-5 text-textMain/50 text-center">
+                Dhandy Putra Fahruddin
               </figcaption>
             </figure>
           </div>

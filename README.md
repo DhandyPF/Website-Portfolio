@@ -14,16 +14,14 @@
 
 ## Tentang Saya
 
-Halo, saya **Dhandy Putra Fahruddin**. Saya menikmati proses merancang ide, mempelajari teknologi, dan menemukan perspektif baru melalui buku.
-
-Minecraft menginspirasi saya untuk berpikir sistematis dan membangun sesuatu secara bertahap. Membaca membantu saya memahami sudut pandang baru dan terus mengembangkan wawasan.
+Halo, saya **Dhandy Putra Fahruddin**. Saya mahasiswa semester 3 di Universitas Jenderal Soedirman.
 
 ## Pendidikan
 
-| Institusi | Program Studi | Periode |
-| --- | --- | --- |
-| SMK Negeri 1 Cikedung | Rekayasa Perangkat Lunak | 2022–2025 |
-| Universitas Jenderal Soedirman | Informatika | 2025–2029 |
+| Institusi                      | Program Studi            | Periode   |
+| ------------------------------ | ------------------------ | --------- |
+| SMK Negeri 1 Cikedung          | Rekayasa Perangkat Lunak | 2022–2025 |
+| Universitas Jenderal Soedirman | Informatika              | 2025–2029 |
 
 ## Kegiatan dan Sertifikat
 
@@ -37,8 +35,8 @@ HTML5 · CSS3 · JavaScript · TypeScript · Go · Java
 **Framework dan perangkat**  
 Next.js · React · Tailwind CSS · Node.js · Git
 
-**AI dan alat produktivitas**  
-Claude · Cursor · CrewAI · Perplexity
+<!-- **AI dan alat produktivitas**
+Claude · Cursor · CrewAI · Perplexity -->
 
 ## Bidang Peminatan
 

@@ -4,7 +4,7 @@ const links = [
   { href: "#kegiatan", label: "Kegiatan" },
   { href: "#keahlian", label: "Keahlian" },
   { href: "#peminatan", label: "Peminatan" },
-  { href: "#kontak", label: "Kontak" },
+  // { href: "#kontak", label: "Kontak" },
 ];
 
 export default function Navbar() {
