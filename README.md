@@ -44,12 +44,8 @@ Claude · Cursor · CrewAI · Perplexity -->
 - **Alur Kerja AI dan Otomatisasi**: Mengeksplorasi penerapan AI untuk mendukung pekerjaan yang lebih efektif.
 - **Desain dan Logika Gim**: Mempelajari hubungan antara aturan, sistem, dan pengalaman bermain.
 
-## Mari Terhubung
+<!-- ## Mari Terhubung
 
-Terbuka untuk percakapan, berbagi ide, dan kolaborasi. Silakan hubungi saya melalui formulir kontak pada situs portofolio.
+Terbuka untuk percakapan, berbagi ide, dan kolaborasi. Silakan hubungi saya melalui formulir kontak pada situs portofolio. -->
 
 ---
-
-<div align="center">
-  <sub>Dirancang dengan kesederhanaan, ketelitian, dan rasa ingin tahu.</sub>
-</div>
