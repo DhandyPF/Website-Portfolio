@@ -9,7 +9,8 @@ const skillGroups = [
       { name: "CSS3", logo: "css" },
       { name: "JavaScript", logo: "javascript" },
       { name: "TypeScript", logo: "typescript" },
-      { name: "Python", logo: "python" },
+      { name: "Go", logo: "go" },
+      { name: "Java", logo: "openjdk" },
     ],
   },
   {

@@ -32,7 +32,7 @@ Saya terus mencari kesempatan untuk belajar, mengembangkan keterampilan, dan men
 ## Keahlian
 
 **Bahasa pemrograman**  
-HTML5 · CSS3 · JavaScript · TypeScript · Python
+HTML5 · CSS3 · JavaScript · TypeScript · Go · Java
 
 **Framework dan perangkat**  
 Next.js · React · Tailwind CSS · Node.js · Git
