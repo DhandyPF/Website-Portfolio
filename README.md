@@ -1,35 +1,57 @@
-# Portofolio Personal
+<div align="center">
+  <h1>DHANDY PUTRA FAHRUDDIN</h1>
+  <p><strong>Teknologi · Kreativitas · Literasi</strong></p>
+  <p>Membangun dengan nalar. Terus belajar dengan rasa ingin tahu.</p>
+  <p>
+    <img src="https://img.shields.io/badge/Next.js-121316?style=flat-square&logo=next.js&logoColor=E8E8ED" alt="Next.js" />
+    <img src="https://img.shields.io/badge/React-121316?style=flat-square&logo=react&logoColor=E8E8ED" alt="React" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS-121316?style=flat-square&logo=tailwindcss&logoColor=E8E8ED" alt="Tailwind CSS" />
+    <img src="https://img.shields.io/badge/JavaScript-121316?style=flat-square&logo=javascript&logoColor=E8E8ED" alt="JavaScript" />
+  </p>
+</div>
 
-Landing page portofolio dengan Next.js App Router dan Tailwind CSS.
+---
 
-## Menjalankan secara lokal
+## Tentang Saya
 
-```bash
-npm install
-npm run dev
-```
+Halo, saya **Dhandy Putra Fahruddin**. Saya menikmati proses merancang ide, mempelajari teknologi, dan menemukan perspektif baru melalui buku.
 
-Buka `http://localhost:3000` di browser.
+Minecraft menginspirasi saya untuk berpikir sistematis dan membangun sesuatu secara bertahap. Membaca membantu saya memahami sudut pandang baru dan terus mengembangkan wawasan.
 
-## Menyesuaikan konten
+## Pendidikan
 
-- Ganti nama dan tagline di `components/Hero.jsx`.
-- Isi bio dan deskripsi persona di `components/About.jsx`.
-- Ganti placeholder `public/profile-3x4.svg` dengan foto formal atau semi-formal berasio 3:4, lalu sesuaikan `src` pada `components/About.jsx`.
-- Isi riwayat pendidikan secara kronologis di `data/education.json`, termasuk path logo resmi setiap institusi. Logo Universitas Jenderal Soedirman berasal dari [situs resminya](https://unsoed.ac.id/). Ganti placeholder logo SMK Negeri 1 Cikedung dengan aset resmi di `public/edu-logos/`.
-- Isi riwayat kegiatan dan sertifikat di `data/certificates.json`. Ganti preview awal dengan foto sertifikat atau dokumentasi di `public/certificates/`.
-- Sesuaikan teknologi dan AI di `components/TechStack.jsx`. Setiap entri menampilkan ikon SVG lokal dari `public/tech-logos/`.
-- Ubah bidang peminatan di `data/peminatan.json`.
-- Ganti email publik di `components/ContactForm.jsx` dan nama di `components/Footer.jsx`.
-- Warna dan tipografi berada di `tailwind.config.js` serta `app/globals.css`.
+| Institusi | Program Studi | Periode |
+| --- | --- | --- |
+| SMK Negeri 1 Cikedung | Rekayasa Perangkat Lunak | 2022–2025 |
+| Universitas Jenderal Soedirman | Informatika | 2025–2029 |
 
-Komentar penanda di komponen menunjukkan bagian personal yang perlu disesuaikan. Data pendidikan, kegiatan, sertifikat, dan peminatan menggunakan struktur JSON yang dapat diedit. Logo sekolah pada data awal masih berupa placeholder, bukan logo resmi.
+## Kegiatan dan Sertifikat
 
-## Mengaktifkan formulir kontak
+Saya terus mencari kesempatan untuk belajar, mengembangkan keterampilan, dan menerapkan pengetahuan melalui kegiatan serta pelatihan.
 
-1. Buat form di [Formspree](https://formspree.io) dan salin endpoint-nya.
-2. Salin `.env.example` menjadi `.env.local`.
-3. Isi `NEXT_PUBLIC_FORMSPREE_URL` di `.env.local` dengan endpoint milik Anda.
-4. Jalankan ulang server pengembangan.
+## Keahlian
 
-Tanpa endpoint, formulir akan menampilkan pesan bahwa konfigurasi belum tersedia dan tidak mengklaim pesan terkirim. Untuk deployment, tambahkan variabel yang sama pada pengaturan environment platform hosting.
+**Bahasa pemrograman**  
+HTML5 · CSS3 · JavaScript · TypeScript · Python
+
+**Framework dan perangkat**  
+Next.js · React · Tailwind CSS · Node.js · Git
+
+**AI dan alat produktivitas**  
+Claude · Cursor · CrewAI · Perplexity
+
+## Bidang Peminatan
+
+- **Pengembangan Web Fullstack**: Merancang pengalaman web yang terstruktur, fungsional, dan mudah digunakan.
+- **Alur Kerja AI dan Otomatisasi**: Mengeksplorasi penerapan AI untuk mendukung pekerjaan yang lebih efektif.
+- **Desain dan Logika Gim**: Mempelajari hubungan antara aturan, sistem, dan pengalaman bermain.
+
+## Mari Terhubung
+
+Terbuka untuk percakapan, berbagi ide, dan kolaborasi. Silakan hubungi saya melalui formulir kontak pada situs portofolio.
+
+---
+
+<div align="center">
+  <sub>Dirancang dengan kesederhanaan, ketelitian, dan rasa ingin tahu.</sub>
+</div>
