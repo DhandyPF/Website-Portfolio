@@ -11,3 +11,5 @@ pnpm-debug.log*
 AGENTS.md
 PRD.md
 .github/*
+
+DEPLOY-ANYMHOST.md
