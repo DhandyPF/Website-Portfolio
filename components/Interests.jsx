@@ -10,34 +10,34 @@ export default function Interests() {
   return (
     <section
       id="peminatan"
-      className="border-y border-borderSubtle bg-cardSurface/50"
+      className="section-stage border-y border-borderSubtle"
     >
       <div className="page-shell section-space">
         <div className="max-w-2xl">
-          <p className="section-label">Bidang peminatan</p>
+          <p className="section-label">05 / Bidang peminatan</p>
           <h2 className="serif-heading mt-5 text-4xl leading-tight sm:text-5xl">
             Bidang yang sedang saya tekuni.
           </h2>
-          <p className="mt-5 text-sm leading-7 text-textMain/60">
+          <p className="mt-5 text-sm leading-7 text-textMuted">
             Beberapa topik yang saat ini menarik perhatian saya. Fokus ini dapat
             berubah seiring hal baru yang saya pelajari.
           </p>
         </div>
 
-        <div className="mt-10 grid gap-4 lg:grid-cols-3">
+        <div className="motion-reveal motion-reveal-delay-1 mt-12 grid gap-5 lg:grid-cols-3">
           {peminatan.map((item, index) => (
             <article
               key={item.id}
-              className="flex min-h-[260px] flex-col border border-borderSubtle bg-cardSurface p-6 sm:p-7"
+              className="card-hover flex min-h-[260px] flex-col rounded-surface border border-borderSubtle bg-cardSurface p-6"
             >
               <div className="flex items-center justify-between">
-                <span className="grid h-11 w-11 place-items-center border border-borderSubtle font-mono text-sm text-accentHighlight">
+                <span className="font-mono text-sm text-accentHighlight">
                   {markers[item.ikon] || "•"}
                 </span>
-                <span className="text-xs text-textMain/40">0{index + 1}</span>
+                <span className="text-xs text-textSubtle">0{index + 1}</span>
               </div>
               <h3 className="mt-8 font-editorial text-2xl">{item.judul}</h3>
-              <p className="mt-3 text-sm leading-7 text-textMain/60">
+              <p className="mt-3 text-sm leading-7 text-textMuted">
                 {item.deskripsi}
               </p>
               <div

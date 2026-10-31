@@ -1,6 +1,6 @@
 import About from "../components/About";
 import Certificates from "../components/Certificates";
-// import ContactForm from "../components/ContactForm";
+import ContactForm from "../components/ContactForm";
 import Education from "../components/Education";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
@@ -12,14 +12,14 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main id="konten-utama" tabIndex="-1">
         <Hero />
         <About />
+        <TechStack />
         <Education />
         <Certificates />
-        <TechStack />
         <Interests />
-        {/* <ContactForm /> */}
+        <ContactForm />
       </main>
       <Footer />
     </>

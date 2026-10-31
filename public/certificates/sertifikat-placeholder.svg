@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" fill="none">
-  <rect width="640" height="360" fill="#121316"/>
-  <rect x="16" y="16" width="608" height="328" stroke="#2A2D34" stroke-width="2"/>
-  <path d="M36 36h36M36 36v36M604 36h-36M604 36v36M36 324h36M36 324v-36M604 324h-36M604 324v-36" stroke="#2A2D34" stroke-width="2"/>
-  <path d="M250 104h140M270 124h100M220 208h200M244 232h152" stroke="#2A2D34" stroke-width="3"/>
-  <circle cx="320" cy="164" r="22" stroke="#D4A373" stroke-width="2"/>
-  <path d="m310 164 7 7 14-15" stroke="#D4A373" stroke-width="2"/>
-  <text x="320" y="276" fill="#E8E8ED" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="3" text-anchor="middle">PREVIEW SERTIFIKAT</text>
-  <text x="320" y="302" fill="#E8E8ED" fill-opacity=".55" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">Ganti placeholder ini dengan foto sertifikat Anda</text>
+  <rect width="640" height="360" fill="#0B1220"/>
+  <rect x="16" y="16" width="608" height="328" stroke="#2B3A50" stroke-width="2"/>
+  <path d="M36 36h36M36 36v36M604 36h-36M604 36v36M36 324h36M36 324v-36M604 324h-36M604 324v-36" stroke="#2B3A50" stroke-width="2"/>
+  <path d="M250 104h140M270 124h100M220 208h200M244 232h152" stroke="#2B3A50" stroke-width="3"/>
+  <circle cx="320" cy="164" r="22" stroke="#D49A5B" stroke-width="2"/>
+  <path d="m310 164 7 7 14-15" stroke="#D49A5B" stroke-width="2"/>
+  <text x="320" y="276" fill="#F1EEE7" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="3" text-anchor="middle">PREVIEW SERTIFIKAT</text>
+  <text x="320" y="302" fill="#F1EEE7" fill-opacity=".55" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">Ganti placeholder ini dengan foto sertifikat Anda</text>
 </svg>

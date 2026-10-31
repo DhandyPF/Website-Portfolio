@@ -19,49 +19,49 @@ export default function Education() {
   return (
     <section
       id="pendidikan"
-      className="border-b border-borderSubtle bg-bgPrimary"
+      className="section-stage border-b border-borderSubtle"
     >
       <div className="page-shell section-space">
         <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
           <div>
-            <p className="section-label">Riwayat pendidikan</p>
+            <p className="section-label">02 / Riwayat pendidikan</p>
             <h2 className="serif-heading mt-5 text-4xl sm:text-5xl">
               Perjalanan akademis.
             </h2>
           </div>
-          <p className="max-w-md text-sm leading-7 text-textMain/60">
+          <p className="max-w-md text-sm leading-7 text-textMuted">
             Catatan pendidikan dan fokus studi yang membentuk proses belajar
             saya.
           </p>
         </div>
 
-        <div className="mt-10 space-y-4">
-          {chronologicalEducation.map((item, index) => (
+        <div className="motion-reveal motion-reveal-delay-1 mt-12 grid gap-5 lg:grid-cols-2">
+          {chronologicalEducation.map((item) => (
             <article
               key={item.id}
-              className="grid gap-5 border border-borderSubtle bg-cardSurface p-6 sm:grid-cols-[124px_1fr] sm:p-8"
+              className="card-hover motion-reveal grid gap-6 rounded-surface border border-borderSubtle bg-cardSurface p-5 sm:grid-cols-[124px_1fr] sm:p-6"
             >
               <Image
                 src={item.logo}
                 alt={`Logo untuk ${item.institusi}`}
                 width={112}
                 height={64}
-                className="h-16 w-28 border border-borderSubtle bg-bgPrimary object-contain p-2"
+                className="h-16 w-28 rounded-control border border-borderSubtle bg-logoSurface object-contain p-2"
               />
-              <div className="grid gap-5 md:grid-cols-[1fr_auto]">
+              <div className="grid gap-5">
                 <div>
                   {/* GANTI PLACEHOLDER DATA: Isi nama, logo resmi, jurusan, periode, dan deskripsi di data/education.json. */}
                   <h3 className="font-editorial text-2xl">{item.institusi}</h3>
-                  <p className="mt-2 text-sm text-textMain/70">
+                  <p className="mt-2 text-sm text-textMuted">
                     {item.jurusan}
                   </p>
                   {item.deskripsi && (
-                    <p className="mt-4 max-w-2xl text-sm leading-7 text-textMain/55">
+                    <p className="mt-4 max-w-2xl text-sm leading-7 text-textMuted">
                       {item.deskripsi}
                     </p>
                   )}
                 </div>
-                <p className="h-fit border border-borderSubtle px-3 py-2 text-xs text-textMain/65">
+                <p className="w-fit rounded-control border border-borderSubtle px-3 py-2 text-xs tracking-wide text-accentHighlight">
                   {item.periode}
                 </p>
               </div>
