@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "number": "01",
+    "judul": "Bahasa pemrograman",
+    "items": [
+      {
+        "name": "HTML5",
+        "logo": "html5"
+      },
+      {
+        "name": "CSS3",
+        "logo": "css"
+      },
+      {
+        "name": "JavaScript",
+        "logo": "javascript"
+      },
+      {
+        "name": "TypeScript",
+        "logo": "typescript"
+      },
+      {
+        "name": "Go",
+        "logo": "go"
+      },
+      {
+        "name": "Java",
+        "logo": "openjdk"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "number": "02",
+    "judul": "Framework dan perangkat",
+    "items": [
+      {
+        "name": "Next.js",
+        "logo": "nextjs"
+      },
+      {
+        "name": "React",
+        "logo": "react"
+      },
+      {
+        "name": "Tailwind CSS",
+        "logo": "tailwindcss"
+      },
+      {
+        "name": "Node.js",
+        "logo": "nodejs"
+      },
+      {
+        "name": "Git",
+        "logo": "git"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "number": "03",
+    "judul": "AI dan alat produktivitas",
+    "items": [
+      {
+        "name": "Claude",
+        "logo": "claude"
+      }
+    ]
+  }
+]

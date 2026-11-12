@@ -1,12 +1,13 @@
-import education from "../data/education.json";
 import Image from "next/image";
+import { readCollection } from "../lib/content-store";
 
 function getStartingYear(period) {
   const year = period.match(/\b\d{4}\b/);
   return year ? Number(year[0]) : Number.MAX_SAFE_INTEGER;
 }
 
-export default function Education() {
+export default async function Education() {
+  const education = await readCollection("education");
   const chronologicalEducation = education
     .map((item, index) => ({ item, index }))
     .sort(

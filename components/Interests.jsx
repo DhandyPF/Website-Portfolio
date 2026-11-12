@@ -1,4 +1,4 @@
-import peminatan from "../data/peminatan.json";
+import { readCollection } from "../lib/content-store";
 
 const markers = {
   "code-block": "</>",
@@ -6,7 +6,8 @@ const markers = {
   pickaxe: "◇",
 };
 
-export default function Interests() {
+export default async function Interests() {
+  const peminatan = await readCollection("interests");
   return (
     <section
       id="peminatan"

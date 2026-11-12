@@ -1,7 +1,8 @@
 import Image from "next/image";
-import certificates from "../data/certificates.json";
+import { readCollection } from "../lib/content-store";
 
-export default function Certificates() {
+export default async function Certificates() {
+  const certificates = await readCollection("certificates");
   return (
     <section
       id="kegiatan"

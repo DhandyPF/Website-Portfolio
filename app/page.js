@@ -8,6 +8,8 @@ import Interests from "../components/Interests";
 import Navbar from "../components/Navbar";
 import TechStack from "../components/TechStack";
 
+export const dynamic = "force-dynamic";
+
 export default function HomePage() {
   return (
     <>

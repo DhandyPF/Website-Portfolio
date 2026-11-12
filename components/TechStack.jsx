@@ -1,42 +1,8 @@
 import Image from "next/image";
+import { readCollection } from "../lib/content-store";
 
-const skillGroups = [
-  {
-    number: "01",
-    title: "Bahasa pemrograman",
-    items: [
-      { name: "HTML5", logo: "html5" },
-      { name: "CSS3", logo: "css" },
-      { name: "JavaScript", logo: "javascript" },
-      { name: "TypeScript", logo: "typescript" },
-      { name: "Go", logo: "go" },
-      { name: "Java", logo: "openjdk" },
-    ],
-  },
-  {
-    number: "02",
-    title: "Framework dan perangkat",
-    items: [
-      { name: "Next.js", logo: "nextjs" },
-      { name: "React", logo: "react" },
-      { name: "Tailwind CSS", logo: "tailwindcss" },
-      { name: "Node.js", logo: "nodejs" },
-      { name: "Git", logo: "git" },
-    ],
-  },
-  {
-    number: "03",
-    title: "AI dan alat produktivitas",
-    items: [
-      { name: "Claude", logo: "claude" },
-      // { name: "Cursor", logo: "cursor" },
-      // { name: "CrewAI", logo: "crewai" },
-      // { name: "Perplexity", logo: "perplexity" },
-    ],
-  },
-];
-
-export default function TechStack() {
+export default async function TechStack() {
+  const skillGroups = await readCollection("tech-stack");
   return (
     <section id="keahlian" className="section-stage section-stage-muted border-y border-borderSubtle">
       <div className="page-shell section-space">
@@ -68,7 +34,7 @@ export default function TechStack() {
               </span>
             </div>
             <h3 className="mt-6 max-w-xs font-editorial text-2xl leading-tight">
-              {group.title}
+              {group.judul}
             </h3>
             <ul className="mt-7 grid flex-1 content-start gap-2 sm:grid-cols-2 md:grid-cols-1 xl:grid-cols-2">
               {group.items.map((item) => (
