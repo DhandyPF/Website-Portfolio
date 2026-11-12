@@ -39,6 +39,7 @@ export default function AdminDashboard() {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
+  const [uploadingField, setUploadingField] = useState("");
 
   const fields = data?.fields || [];
   const activeLabel = useMemo(() => data?.label || "Konten", [data]);
@@ -72,6 +73,42 @@ export default function AdminDashboard() {
     setForm(initialValue(fields));
   }
 
+  async function uploadFile(fieldName, file) {
+    if (!file) return "";
+    setUploadingField(fieldName);
+    setError("");
+    setMessage("");
+    try {
+      const uploadData = new FormData();
+      uploadData.append("collection", collection);
+      uploadData.append("file", file);
+      const response = await fetch("/api/admin/upload", { method: "POST", body: uploadData });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || "File gagal diunggah.");
+      if (fieldName !== "__tech-stack-logo__") {
+        setForm((currentForm) => ({ ...currentForm, [fieldName]: result.value }));
+      }
+      setMessage("File berhasil diunggah. Simpan formulir untuk menerapkan perubahan.");
+      return result.value;
+    } catch (uploadError) {
+      setError(uploadError.message);
+      return "";
+    } finally {
+      setUploadingField("");
+    }
+  }
+
+  async function appendTechLogo(file) {
+    if (!file) return;
+    const uploadedPath = await uploadFile("__tech-stack-logo__", file);
+    if (!uploadedPath) return;
+    const filename = uploadedPath.split("/").pop().replace(/\.[^.]+$/, "");
+    setForm((currentForm) => ({
+      ...currentForm,
+      items: `${currentForm.items ? `${currentForm.items}\n` : ""}${filename} | ${uploadedPath}`,
+    }));
+  }
+
   async function submitForm(event) {
     event.preventDefault();
     setBusy(true);
@@ -93,6 +130,7 @@ export default function AdminDashboard() {
     } finally {
       setBusy(false);
     }
+
   }
 
   async function deleteItem(id) {
@@ -178,8 +216,34 @@ export default function AdminDashboard() {
                         className="rounded-control border border-borderSubtle bg-inputSurface px-3 py-3 text-textMain"
                       />
                     )}
+                    {field.upload && field.type !== "items" && (
+                      <span className="flex flex-wrap items-center gap-3">
+                        <input
+                          type="file"
+                          accept=".png,.jpg,.jpeg,.svg,image/png,image/jpeg,image/svg+xml"
+                          onChange={(event) => uploadFile(field.name, event.target.files?.[0])}
+                          disabled={Boolean(uploadingField)}
+                          className="block w-full text-xs text-textMuted file:mr-3 file:rounded-control file:border-0 file:bg-accentHighlight file:px-3 file:py-2 file:font-semibold file:text-accentContrast"
+                        />
+                        {uploadingField === field.name && <span className="text-xs text-textMuted">Mengunggah...</span>}
+                      </span>
+                    )}
                   </label>
                 ))}
+                {collection === "tech-stack" && (
+                  <label className="grid gap-2 text-sm sm:col-span-2">
+                    Upload logo tech stack
+                    <span className="text-xs text-textMuted">Logo akan ditambahkan ke textarea item. Ubah nama item bila diperlukan.</span>
+                    <input
+                      type="file"
+                      accept=".png,.jpg,.jpeg,.svg,image/png,image/jpeg,image/svg+xml"
+                      onChange={(event) => appendTechLogo(event.target.files?.[0])}
+                      disabled={Boolean(uploadingField)}
+                      className="block w-full text-xs text-textMuted file:mr-3 file:rounded-control file:border-0 file:bg-accentHighlight file:px-3 file:py-2 file:font-semibold file:text-accentContrast"
+                    />
+                    {uploadingField === "__tech-stack-logo__" && <span className="text-xs text-textMuted">Mengunggah...</span>}
+                  </label>
+                )}
               </div>
               <div className="flex flex-wrap gap-3">
                 <button disabled={busy} className="rounded-control bg-accentHighlight px-4 py-3 font-semibold text-accentContrast disabled:opacity-60">

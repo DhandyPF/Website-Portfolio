@@ -43,7 +43,7 @@ export default async function TechStack() {
                   className="motion-interactive flex min-h-14 items-center gap-3 rounded-control border border-borderSubtle bg-surfaceRaised px-3 py-2 text-sm text-textMain hover:border-accentHighlight"
                 >
                   <Image
-                    src={`/tech-logos/${item.logo}.svg`}
+                    src={item.logo.startsWith("/") ? item.logo : `/tech-logos/${item.logo}.svg`}
                     alt=""
                     aria-hidden="true"
                     width={20}

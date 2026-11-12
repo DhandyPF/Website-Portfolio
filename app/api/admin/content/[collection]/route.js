@@ -21,7 +21,9 @@ function validatePayload(collection, payload) {
       }
       values[field.name] = value.map((item) => ({
         name: String(item.name).trim(),
-        logo: String(item.logo).trim().replace(/\.svg$/i, ""),
+        logo: String(item.logo).trim().startsWith("/")
+          ? String(item.logo).trim()
+          : String(item.logo).trim().replace(/\.svg$/i, ""),
       }));
       continue;
     }
